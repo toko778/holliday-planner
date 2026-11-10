@@ -43,6 +43,8 @@ Supabase-ში გახსენი `Authentication → URL Configuration`.
 - ლოკალური განვითარებისთვის `Redirect URLs` სიაში დაამატე `http://127.0.0.1:5173/**` და `http://localhost:5173/**`.
 - განთავსებისას დაამატე რეალური საიტის ზუსტი მისამართი და შესაბამისად განაახლე `Site URL`.
 
+საჯარო განთავსებისთვის `Site URL` არის `https://holliday-planner.dynamicabode1.chatgpt.site`. `Redirect URLs` სიაში საჭიროა `https://holliday-planner.dynamicabode1.chatgpt.site/` და `https://holliday-planner.dynamicabode1.chatgpt.site/#account`. ლოკალური განვითარების ჩანაწერები შეიძლება შენარჩუნდეს ამავე სიაში.
+
 აპლიკაცია დაბრუნებისთვის იყენებს მიმდინარე origin-ს, pathname-ს და `#account` განყოფილებას. PKCE ნაკადისთვის წერილის ბმული გახსენი იმავე ბრაუზერში და მოწყობილობაზე, საიდანაც დადასტურება მოითხოვე. [Redirect URL-ები](https://supabase.com/docs/guides/auth/redirect-urls) და [PKCE](https://supabase.com/docs/guides/auth/sessions/pkce-flow).
 
 ## 4. ელფოსტის პირობები
