@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-11",
+  "project_id": "appgprj_6af3834bb8dc8191994aa3ba876aa69a",
+  "version_id": "appgprj_6af3834bb8dc8191994aa3ba876aa69a~appgver_1726b31fff84819191277751405bea62",
+  "deployment_id": "appgdep_6af384d72d188191b8dbefec232dd9a4",
+  "status": "succeeded",
+  "public_url": "https://holliday-planner.dynamicabode1.chatgpt.site",
+  "access_mode": "public",
+  "source_commit": "bb8f5e2e69bf61e845252a08046fbbfd80b6ee12",
+  "checks": {
+    "anonymous_html_status": 200,
+    "javascript_status": 200,
+    "css_status": 200,
+    "browser_console_errors": 0,
+    "supabase_site_url": "https://holliday-planner.dynamicabode1.chatgpt.site",
+    "supabase_public_redirects": [
+      "https://holliday-planner.dynamicabode1.chatgpt.site/",
+      "https://holliday-planner.dynamicabode1.chatgpt.site/#account"
+    ]
+  },
+  "limitations": [
+    "Custom SMTP is disabled in Supabase. Broad-audience confirmation emails require SMTP setup.",
+    "Live sign-up, email confirmation and recovery remain to be verified by the user."
+  ]
+}
