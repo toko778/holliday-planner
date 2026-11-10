@@ -1,0 +1,18 @@
+
+> holliday-planner@0.1.0 test
+> node --test tests/navigation.test.mjs
+
+✔ mobile navigation updates its accessible state and closes after following a link (402.5009ms)
+✔ Escape closes the dropdown first, then mobile navigation, restoring trigger focus (42.1871ms)
+✔ outside pointer interaction closes both disclosures (12.779ms)
+✔ moving focus out of the navigation closes it (12.8532ms)
+✔ changing between mobile and desktop resets open disclosure state (12.6754ms)
+✔ homepage has three destinations and every section link has a real target (34.461ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2077.1998

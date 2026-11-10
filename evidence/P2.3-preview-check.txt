@@ -1,0 +1,12 @@
+Production preview HTTP check — 2026-11-10
+Node.js: 24.22.0
+PASS 200 / — Georgian HTML entry point
+PASS 200 /favicon.svg
+PASS 200 /assets/index-BbXp9OWN.css
+PASS 200 /assets/index-nQx3D8bE.js
+PASS 200 /assets/noto-sans-georgian-georgian-wght-normal-DxXCh91f.woff2
+PASS 200 /assets/noto-sans-georgian-latin-ext-wght-normal-CBziPIP0.woff2
+PASS 200 /assets/noto-sans-georgian-latin-wght-normal-C-4l_Z7F.woff2
+PASS 200 /assets/noto-sans-georgian-math-wght-normal-D6IO91_E.woff2
+PASS 200 /assets/noto-sans-georgian-symbols-wght-normal-ByFN5DTA.woff2
+This HTTP check does not verify browser rendering or responsive layout.

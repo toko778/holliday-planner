@@ -1,0 +1,19 @@
+
+> holliday-planner@0.1.0 build
+> tsc -b && vite build
+
+vite v8.3.7 building client environment for production...
+transforming...
+✓ 2080 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                        0.92 kB │ gzip:  0.51 kB
+dist/assets/noto-sans-georgian-symbols-wght-normal-ByFN5DTA.woff2     12.11 kB
+dist/assets/noto-sans-georgian-latin-ext-wght-normal-CBziPIP0.woff2   13.67 kB
+dist/assets/noto-sans-georgian-math-wght-normal-D6IO91_E.woff2        17.51 kB
+dist/assets/noto-sans-georgian-latin-wght-normal-C-4l_Z7F.woff2       24.91 kB
+dist/assets/noto-sans-georgian-georgian-wght-normal-DxXCh91f.woff2    41.54 kB
+dist/assets/index-BbXp9OWN.css                                        24.03 kB │ gzip:  8.10 kB
+dist/assets/index-nQx3D8bE.js                                        243.48 kB │ gzip: 76.21 kB
+
+✓ built in 544ms
