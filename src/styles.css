@@ -140,6 +140,63 @@ h3 { font-size: 20px; font-weight: 600; letter-spacing: -.5px; }
   .about-section { padding-bottom: 35px; }
   .site-footer { flex-direction: column; align-items: flex-start; gap: 17px; }
 }
+.account-section { padding-block: 0 65px; }
+.account-panel { display: grid; grid-template-columns: .9fr 1.1fr; border: 1px solid #d7dece; border-radius: 16px; overflow: hidden; background: #fffefa; }
+.account-intro { padding: 48px 40px; background: #e6eadb; }
+.account-compass { display: grid; place-items: center; width: 70px; height: 70px; margin-bottom: 32px; border: 1px solid #9ba98c; border-radius: 50%; }
+.account-intro h2 { margin-bottom: 20px; font-size: 28px; }
+.account-intro > p:not(.eyebrow) { color: #52634d; line-height: 2; font-size: 13px; }
+.account-benefits { display: grid; gap: 17px; margin-block: 30px 45px; font-size: 12px; }
+.account-benefits li, .account-security { display: flex; gap: 10px; align-items: center; }
+.account-benefits svg, .account-security svg { flex-shrink: 0; }
+.account-security { color: #52634d; font-size: 11px; }
+.account-content { padding: 40px 44px; min-width: 0; }
+.account-content > h2 { font-size: 23px; overflow-wrap: anywhere; }
+.account-subtitle { margin-block: 9px 24px; font-size: 12px; color: #66736a; overflow-wrap: anywhere; line-height: 1.9; }
+.account-modes { display: flex; padding: 4px; margin-bottom: 25px; border: 1px solid #dce1d6; border-radius: 8px; background: #f2f3eb; }
+.account-modes button { flex: 1; padding: 11px; font-size: 12px; border-radius: 5px; color: #526458; }
+.account-modes button[aria-pressed="true"] { color: #244c3c; background: #fffefa; box-shadow: 0 2px 6px #244c3c12; font-weight: 650; }
+.account-fields { display: grid; gap: 18px; min-width: 0; }
+.account-field > label { display: block; font-size: 12px; font-weight: 550; margin-bottom: 8px; }
+.account-input-wrap { position: relative; }
+.account-field input { width: 100%; min-height: 48px; padding: 12px 44px 12px 13px; border: 1px solid #cbd4c6; border-radius: 7px; background: white; font: inherit; font-size: 14px; }
+.account-field input[aria-invalid="true"] { border-color: #a03d2c; }
+.password-toggle { position: absolute; top: 2px; right: 3px; display: grid; place-items: center; width: 42px; height: 44px; color: #66736a; }
+.password-hint { font-size: 11px; color: #66736a; margin-top: -9px; }
+.field-error { font-size: 11px; line-height: 1.8; margin-top: 7px; color: #9c3325; }
+.interest-options { min-width: 0; }
+.interest-options legend { font-size: 12px; line-height: 1.9; margin-bottom: 12px; }
+.interest-options legend span { font-size: 10px; color: #66736a; margin-left: 5px; }
+.interest-grid { display: flex; flex-wrap: wrap; gap: 9px; }
+.interest-option { display: flex; align-items: center; gap: 7px; min-height: 40px; border: 1px solid #d3dacd; padding: 8px 11px; border-radius: 7px; font-size: 11px; cursor: pointer; }
+.interest-option:has(input:checked) { border-color: #38634e; background: #edf2e8; }
+.interest-option input { width: 15px; height: 15px; accent-color: #244c3c; }
+.account-submit { width: 100%; margin-top: 4px; }
+.account-fields:disabled { opacity: .65; }
+.account-modes button:disabled, .account-fields:disabled button { cursor: wait; }
+.forgot-password, .logout-button { justify-content: center; min-height: 40px; }
+.account-success, .account-failure, .account-notice { padding: 13px 15px; border-radius: 7px; font-size: 12px; line-height: 1.9; margin-bottom: 20px; }
+.account-success { background: #eaf2e3; color: #285137; border: 1px solid #c8dabb; }
+.account-failure { background: #fff0ea; color: #903223; border: 1px solid #e8c6b8; }
+.account-notice { background: #f4f0e4; color: #685738; border: 1px solid #e6ddc8; }
+@media (max-width: 1023px) {
+  .account-panel { grid-template-columns: .85fr 1.15fr; }
+  .account-intro, .account-content { padding: 30px 25px; }
+  .account-intro h2 { font-size: 23px; }
+  .account-content > h2 { font-size: 21px; }
+}
+@media (max-width: 767px) {
+  .account-section { padding-bottom: 40px; }
+  .account-panel { grid-template-columns: 1fr; }
+  .account-intro { padding: 26px 23px; }
+  .account-compass { width: 51px; height: 51px; margin-bottom: 20px; }
+  .account-compass svg { width: 30px; }
+  .account-intro h2 { font-size: 23px; }
+  .account-benefits { gap: 13px; margin-block: 22px; }
+  .account-content { padding: 27px 20px; }
+  .account-content > h2 { font-size: 21px; }
+  .account-field input { font-size: 16px; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }

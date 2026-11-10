@@ -2,6 +2,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Compass, MapPin, Route, SlidersHor
 import { Landscape } from './components/Landscape'
 import { Navigation } from './components/Navigation'
 import { destinations } from './data/destinations'
+import { AccountSection } from './components/AccountSection'
 
 const steps = [
   { icon: SlidersHorizontal, title: 'შენი სურვილებით', text: 'ადგილი, თარიღები, ინტერესები და ბიუჯეტი — კარგი გეგმა შენი არჩევანით იწყება.' },
@@ -56,7 +57,8 @@ export default function App() {
           <div className="grid gap-8 md:grid-cols-3">{steps.map(({ icon: Icon, title, text }, index) => <article key={title} className="step"><div className="flex items-center justify-between"><span className="step-icon"><Icon size={23} strokeWidth={1.5} /></span><span className="step-number">0{index + 1}</span></div><h3>{title}</h3><p>{text}</p></article>)}</div>
         </section>
 
-        <section id="about" className="page-width about-section" aria-labelledby="about-title"><div className="about-panel"><div><p className="eyebrow">Holliday Planner-ის შესახებ</p><h2 id="about-title">ნაკლები დრო დაგეგმვაში.<br />მეტი დრო მოგზაურობაში.</h2></div><div className="about-copy"><p>ვქმნით დასვენების პერსონალური და ჯგუფური დაგეგმვის ქართულ სივრცეს — შენი ინტერესებით დაწყებული, მეგობრების მოწვევით გაგრძელებული.</p><p className="stage-note">ეს საწყისი ვერსიაა: უკვე შეგიძლია მიმართულებების გაცნობა. რეგისტრაცია, გეგმის შექმნა, ამინდისა და AI-ის რეკომენდაციები შემდეგ ეტაპებზე დაემატება.</p><a className="text-link" href="#destinations">აირჩიე შთაგონება <ArrowUpRight size={17} /></a></div></div></section>
+        <AccountSection />
+        <section id="about" className="page-width about-section" aria-labelledby="about-title"><div className="about-panel"><div><p className="eyebrow">Holliday Planner-ის შესახებ</p><h2 id="about-title">ნაკლები დრო დაგეგმვაში.<br />მეტი დრო მოგზაურობაში.</h2></div><div className="about-copy"><p>ვქმნით დასვენების პერსონალური და ჯგუფური დაგეგმვის ქართულ სივრცეს — შენი ინტერესებით დაწყებული, მეგობრების მოწვევით გაგრძელებული.</p><p className="stage-note">ეს საწყისი ვერსიაა: შეგიძლია მიმართულებების გაცნობა და ანგარიშების განყოფილების ნახვა. გეგმის შექმნა და ამინდის ინტეგრაცია შემდეგ ეტაპებზე დაემატება.</p><a className="text-link" href="#account">შენი პირადი სივრცე <ArrowUpRight size={17} /></a></div></div></section>
       </main>
       <footer className="page-width site-footer"><a href="#home" className="footer-brand"><Compass size={19} />Holliday Planner<span className="text-clay">.</span></a><p>შექმნილია მომავალი მოგონებებისთვის.</p><a href="#home" className="text-link">დასაწყისში დაბრუნება <ArrowUpRight size={15} /></a></footer>
     </>

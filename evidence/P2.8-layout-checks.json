@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-11",
+  "checks": [
+    {
+      "accountWidth": 689,
+      "documentWidth": 753,
+      "width": 768
+    },
+    {
+      "accountWidth": 335,
+      "documentWidth": 375,
+      "width": 390
+    },
+    {
+      "accountWidth": 280,
+      "documentWidth": 320,
+      "width": 320
+    },
+    {
+      "accountWidth": 1200,
+      "documentWidth": 1425,
+      "width": 1440
+    }
+  ]
+}

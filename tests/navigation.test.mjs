@@ -23,7 +23,7 @@ before(async () => {
     addEventListener: (_, handler) => { breakpointChanged = handler },
     removeEventListener: () => {},
   })
-  server = await createServer({ server: { middlewareMode: true }, appType: 'custom' })
+  server = await createServer({ configFile: false, server: { middlewareMode: true, hmr: false, ws: false }, appType: 'custom' })
   ;({ Navigation } = await server.ssrLoadModule('/src/components/Navigation.tsx'))
   ;({ default: App } = await server.ssrLoadModule('/src/App.tsx'))
 })

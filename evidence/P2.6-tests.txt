@@ -1,0 +1,27 @@
+
+> holliday-planner@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ new passwords must match and be long enough, while existing short passwords can sign in (385.6966ms)
+✔ invalid registration focuses the first error and never calls the provider (145.2376ms)
+✔ registration submits trimmed details and interests and shows email confirmation (56.0143ms)
+✔ unconfigured accounts report unavailable service without claiming a created account (46.8584ms)
+✔ login reports invalid credentials and then accepts an existing short password (46.1939ms)
+✔ an existing session restores only recognized interests (24.0194ms)
+✔ signed-in interests save on form submission and logout clears the profile (46.6339ms)
+✔ recovery email and recovery session use the password reset flow (71.1771ms)
+✔ provider failures stay on the form and repeated submission cannot duplicate a pending signup (52.9787ms)
+✔ mobile navigation updates its accessible state and closes after following a link (484.5407ms)
+✔ Escape closes the dropdown first, then mobile navigation, restoring trigger focus (55.4675ms)
+✔ outside pointer interaction closes both disclosures (21.6788ms)
+✔ moving focus out of the navigation closes it (15.1743ms)
+✔ changing between mobile and desktop resets open disclosure state (11.7025ms)
+✔ homepage has three destinations and every section link has a real target (60.5105ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3086.3297

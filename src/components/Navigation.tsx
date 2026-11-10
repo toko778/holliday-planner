@@ -71,8 +71,8 @@ export function Navigation() {
               <a href="#about" onClick={closeNavigation}>პროექტის შესახებ</a>
             </div>
           </div>
-          <a className="button button-small nav-cta" href="#destinations" onClick={closeNavigation}>
-            დაიწყე აღმოჩენა <ArrowUpRight size={17} />
+          <a className="button button-small nav-cta" href="#account" onClick={closeNavigation}>
+            ჩემი სივრცე <ArrowUpRight size={17} />
           </a>
         </nav>
       </div>
