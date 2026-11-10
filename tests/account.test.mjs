@@ -25,6 +25,8 @@ before(async () => {
   server = await createServer({ configFile: false, server: { middlewareMode: true, hmr: false, ws: false }, appType: 'custom' })
   ;({ AccountSection } = await server.ssrLoadModule('/src/components/AccountSection.tsx'))
   ;({ validateAccount } = await server.ssrLoadModule('/src/lib/account.ts'))
+  const { supabase } = await server.ssrLoadModule('/src/lib/supabase.ts')
+  assert.equal(supabase, null, 'SSR tests must not initialize the live browser Auth client')
 })
 
 beforeEach(async () => {

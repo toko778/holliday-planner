@@ -1,0 +1,19 @@
+Holliday Planner — Supabase connection checks
+Date: 2026-11-11
+
+Local .env.local configured and verified as ignored by Git.
+GET /auth/v1/settings succeeded with the supplied publishable key.
+Email provider enabled, signup enabled, email confirmation required.
+Browser registration form no longer displays the setup notice.
+
+npm.cmd test — 15 passed, 0 failed.
+SSR fixture confirms that the browser Auth singleton is not initialized in SSR tests.
+npm.cmd run build — TypeScript and Vite succeeded with the local Supabase configuration.
+Production JavaScript — 473.64 kB, gzip 135.93 kB.
+
+Supabase URL Configuration observed before user setup:
+Site URL: http://localhost:3000
+Redirect URLs: empty
+
+Pending: local redirect setup and user-operated signup, email confirmation,
+session restoration, sign-in, sign-out and password recovery on the real project.

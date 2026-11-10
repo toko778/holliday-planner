@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-11",
+  "checks": {
+    "localEnvironmentConfigured": true,
+    "localEnvironmentIgnoredByGit": true,
+    "authSettingsHttpStatus": 200,
+    "emailSignInEnabled": true,
+    "signUpEnabled": true,
+    "emailConfirmationRequired": true,
+    "browserSetupNoticeRemoved": true,
+    "automatedTestsPassed": 15,
+    "productionBuildPassed": true
+  },
+  "observedRedirectConfiguration": {
+    "siteUrl": "http://localhost:3000",
+    "redirectAllowListEmpty": true,
+    "requiredLocalSiteUrl": "http://127.0.0.1:5173"
+  },
+  "liveAccountFlow": "Awaiting local redirect configuration and user-operated email confirmation, sign-in and password recovery."
+}
