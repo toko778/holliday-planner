@@ -12,22 +12,24 @@
 
 ## შენახული სქრინშოთები
 
+ყველა სქრინშოტი გადატანილია ცალკე [Screenshots საქაღალდეში](../Screenshots/). ამ `evidence/` საქაღალდეში რჩება ჟურნალები, JSON შემოწმებები და მათი აღწერა.
+
 | ფაილი | მოთხოვნა და კადრი |
 | --- | --- |
-| `P2.4-home-desktop-1440.jpg` | P2.4, P2.5 — მთავარი გვერდის სრული კადრი |
-| `P2.2-dropdown-desktop.jpg` | P2.2 — კომპიუტერზე გახსნილი dropdown |
-| `P2.8-home-tablet-768.jpg` | P2.8 — პლანშეტის სრული გვერდი |
-| `P2.8-home-mobile-390.jpg` | P2.8 — მობილურის სრული გვერდი |
-| `P2.8-home-mobile-320.jpg` | P2.8 — პატარა ეკრანის სრული გვერდი |
-| `P2.2-navigation-mobile-390.jpg` | P2.2, P2.8 — მობილური მენიუ და dropdown |
-| `P2.6-register-desktop-1440.jpg` | P2.6 — რეგისტრაციის ფორმა |
-| `P2.6-register-mobile-390.jpg` | P2.6, P2.8 — მობილური რეგისტრაციის განყოფილება |
-| `P2.6-register-validation-desktop.jpg` | P2.6 — ცარიელი ველების შეცდომები და ფოკუსი |
-| `P2.6-login-desktop-1440.jpg` | P2.6 — შესვლის ფორმა |
-| `P2.6-reset-desktop-1440.jpg` | P2.6 — პაროლის აღდგენის ფორმა |
-| `P2.6-validation-code.jpg` | P2.6 — VS Code-ში გახსნილი `src/lib/account.ts` |
-| `P2.6-registration-code.jpg` | P2.6 — VS Code-ში გახსნილი რეგისტრაციის მოთხოვნის კოდი |
-| `P2.6-supabase-connected.jpg` | P2.6 — საჯარო კონფიგურაციის დამატების შემდეგ გახსნილი რეგისტრაციის ფორმა |
+| [P2.4-home-desktop-1440.jpg](../Screenshots/P2.4-home-desktop-1440.jpg) | P2.4, P2.5 — მთავარი გვერდის სრული კადრი |
+| [P2.2-dropdown-desktop.jpg](../Screenshots/P2.2-dropdown-desktop.jpg) | P2.2 — კომპიუტერზე გახსნილი dropdown |
+| [P2.8-home-tablet-768.jpg](../Screenshots/P2.8-home-tablet-768.jpg) | P2.8 — პლანშეტის სრული გვერდი |
+| [P2.8-home-mobile-390.jpg](../Screenshots/P2.8-home-mobile-390.jpg) | P2.8 — მობილურის სრული გვერდი |
+| [P2.8-home-mobile-320.jpg](../Screenshots/P2.8-home-mobile-320.jpg) | P2.8 — პატარა ეკრანის სრული გვერდი |
+| [P2.2-navigation-mobile-390.jpg](../Screenshots/P2.2-navigation-mobile-390.jpg) | P2.2, P2.8 — მობილური მენიუ და dropdown |
+| [P2.6-register-desktop-1440.jpg](../Screenshots/P2.6-register-desktop-1440.jpg) | P2.6 — რეგისტრაციის ფორმა |
+| [P2.6-register-mobile-390.jpg](../Screenshots/P2.6-register-mobile-390.jpg) | P2.6, P2.8 — მობილური რეგისტრაციის განყოფილება |
+| [P2.6-register-validation-desktop.jpg](../Screenshots/P2.6-register-validation-desktop.jpg) | P2.6 — ცარიელი ველების შეცდომები და ფოკუსი |
+| [P2.6-login-desktop-1440.jpg](../Screenshots/P2.6-login-desktop-1440.jpg) | P2.6 — შესვლის ფორმა |
+| [P2.6-reset-desktop-1440.jpg](../Screenshots/P2.6-reset-desktop-1440.jpg) | P2.6 — პაროლის აღდგენის ფორმა |
+| [P2.6-validation-code.jpg](../Screenshots/P2.6-validation-code.jpg) | P2.6 — VS Code-ში გახსნილი `src/lib/account.ts` |
+| [P2.6-registration-code.jpg](../Screenshots/P2.6-registration-code.jpg) | P2.6 — VS Code-ში გახსნილი რეგისტრაციის მოთხოვნის კოდი |
+| [P2.6-supabase-connected.jpg](../Screenshots/P2.6-supabase-connected.jpg) | P2.6 — საჯარო კონფიგურაციის დამატების შემდეგ გახსნილი რეგისტრაციის ფორმა |
 
 პირველი სქრინშოთები ასახავს კონფიგურაციამდე არსებულ მდგომარეობას. დაკავშირების შემოწმების შედეგებია `P2.6-supabase-connection.json` ფაილში. ახალი კონფიგურაციით თავიდან გავლილია 15/15 ტესტი და production build. რეალური ანგარიშის შექმნის მტკიცებულება დაემატება მომხმარებლის მიერ სცენარის გავლის შემდეგ.
 
@@ -43,8 +45,8 @@
 
 ავტორიზაციის გარეშე HTTP შემოწმება წარმატებულია — გვერდი, JavaScript და CSS აბრუნებს 200-ს. ბრაუზერში ჩანს მთავარი გვერდი და ანგარიშის ფორმები; შემოწმებისას კონსოლის შეცდომები/გაფრთხილებები არ გამოვლენილა.
 
-- `P2.9-production-home.jpg` — საჯაროდ გახსნილი მთავარი გვერდი.
-- `P2.9-production-redirects.jpg` — Supabase-ის ჰოსტინგის პარამეტრების კადრი.
+- [P2.9-production-home.jpg](../Screenshots/P2.9-production-home.jpg) — საჯაროდ გახსნილი მთავარი გვერდი.
+- [P2.9-production-redirects.jpg](../Screenshots/P2.9-production-redirects.jpg) — Supabase-ის ჰოსტინგის პარამეტრების კადრი.
 - `P2.9-public-deployment.json` — გამოქვეყნებული ვერსია და HTTP შემოწმების შედეგები.
 
 Supabase-ში custom SMTP გამორთულია. სხვა მომხმარებლების დადასტურების წერილებისთვის ეს სერვისი გასამართია. სრული რეგისტრაცია, ელფოსტის დადასტურება და აღდგენა ამ განთავსების შემოწმებაში გავლილი არ არის.
@@ -65,8 +67,8 @@ Supabase-ში custom SMTP გამორთულია. სხვა მო�
 | `P2.7-planner-tests.txt` | 34/34 ტესტი: ანგარიშები, ნავიგაცია, დაგეგმვის API და ფორმა |
 | `P2.9-ai-build.txt` | TypeScript, Vite კლიენტი და Cloudflare Worker |
 | `P2.9-groq-live.json` | Groq-ის რეალური ქართული გეგმა და Open-Meteo-ს რეალური პროგნოზი სატესტო მოგზაურობაზე |
-| `P2.7-planner-desktop-1440.jpg` | რეალურ ბრაუზერში ახალი დაგეგმვის ფორმა |
-| `P2.8-planner-mobile-390.jpg` | მობილურის სრული გვერდი ახალი დაგეგმვით |
+| [P2.7-planner-desktop-1440.jpg](../Screenshots/P2.7-planner-desktop-1440.jpg) | რეალურ ბრაუზერში ახალი დაგეგმვის ფორმა |
+| [P2.8-planner-mobile-390.jpg](../Screenshots/P2.8-planner-mobile-390.jpg) | მობილურის სრული გვერდი ახალი დაგეგმვით |
 | `P2.8-planner-layouts.json` | ეკრანის 4 ზომა, ბიუჯეტის ცვლილება და სტუმრის შეზღუდვა |
 
 რეალური მომხმარებლის პაროლი ტესტებში არ გამოიყენება. API-ის მფლობელობისა და შეცდომების სცენარები მოწმდება SQLite-ის ნამდვილ მიგრაციაზე და სატესტო Supabase/Groq პასუხებზე. რეალური Groq/Open-Meteo ცდა გამოყოფილია სატესტო კლიენტებისგან. გასაღები არ ინახება მტკიცებულებებში ან კლიენტის build-ში.
@@ -76,7 +78,7 @@ Supabase-ში custom SMTP გამორთულია. სხვა მო�
 - `P2.9-ai-production.json` — მოქმედი საჯარო Worker-ის HTTP შემოწმება: გვერდი/აქტივები 200, AI/შენახვა ჩართულია, პირადი API სტუმრისთვის 401.
 - `P2.9-ai-signed-in.json` — რეალურ შესულ ანგარიშში AI შედეგი და D1-ში შენახვის დადასტურება. შეიცავს მხოლოდ სატესტო სცენარის უსაფრთხო შეჯამებას.
 - `P3-presentation-check.json` — პრეზენტაციის რვა სლაიდის შემოწმება და შენახული PowerPoint-ის ტექნიკური შემოწმების შედეგი.
-- `P3-presentation-title.png`, `P3-presentation-budget.png` — საბოლოო პრეზენტაციის სათაური და ბიუჯეტის სლაიდი.
+- [P3-presentation-title.png](../Screenshots/P3-presentation-title.png), [P3-presentation-budget.png](../Screenshots/P3-presentation-budget.png) — საბოლოო პრეზენტაციის სათაური და ბიუჯეტის სლაიდი.
 - [საბოლოო ანგარიში](../docs/06-project-report.ka.md), [პრეზენტაცია და ტექსტი](../deliverables/README.ka.md).
 
 საჯარო გენერაციისას ამინდის სერვისი მიუწვდომელი იყო და შედეგი ამას აშკარად მიუთითებდა. რეალური სესიის საბოლოო reload და AI კადრის შენახვა ავტომატური მართვის შეზღუდვით ვერ დასრულდა. ამ ნაბიჯებს გავლილად არ ვუთითებთ. ბაზის შენახვა დამოუკიდებლად, read-only წაკითხვით დადასტურდა.
