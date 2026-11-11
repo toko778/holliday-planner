@@ -106,5 +106,5 @@ test('homepage has three destinations and every section link has a real target',
   }
   const ids = [...document.querySelectorAll('[id]')].map((element) => element.id)
   assert.equal(new Set(ids).size, ids.length, 'Every SVG and disclosure ID must be unique')
-  assert.match(document.getElementById('about').textContent, /ეს საწყისი ვერსიაა/)
+  assert.ok(document.getElementById('planner'), 'Homepage includes the working planner')
 })

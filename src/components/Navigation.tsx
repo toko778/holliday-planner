@@ -58,6 +58,7 @@ export function Navigation() {
         <nav id="main-navigation" aria-label="მთავარი ნავიგაცია"
           className={`${mobileOpen ? 'flex' : 'hidden'} nav-content lg:flex`}>
           <a className="nav-link" href="#home" onClick={closeNavigation}>მთავარი</a>
+          <a className="nav-link" href="#planner" onClick={closeNavigation}>დაგეგმვა</a>
           <a className="nav-link" href="#destinations" onClick={closeNavigation}>მიმართულებები</a>
           <div ref={guideRef} className="guide-disclosure" onBlur={(event) => {
             if (!event.currentTarget.contains(event.relatedTarget)) setGuideOpen(false)
@@ -67,8 +68,9 @@ export function Navigation() {
               გზამკვლევი <ChevronDown size={15} className={guideOpen ? 'rotate-180' : ''} />
             </button>
             <div id="guide-links" className="guide-links" hidden={!guideOpen}>
-              <a href="#how-it-works" onClick={closeNavigation}>როგორ იმუშავებს</a>
+              <a href="#how-it-works" onClick={closeNavigation}>როგორ მუშაობს</a>
               <a href="#about" onClick={closeNavigation}>პროექტის შესახებ</a>
+              <a href="#account" onClick={closeNavigation}>ჩემი ანგარიში</a>
             </div>
           </div>
           <a className="button button-small nav-cta" href="#account" onClick={closeNavigation}>

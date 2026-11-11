@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-11",
+  "page": "http://127.0.0.1:5174/#planner",
+  "checks": [
+    { "viewport": 320, "documentWidth": 320, "fits": true },
+    { "viewport": 390, "documentWidth": 375, "fits": true },
+    { "viewport": 768, "documentWidth": 753, "fits": true },
+    { "viewport": 1440, "documentWidth": 1425, "fits": true }
+  ],
+  "budgetChecks": { "groupBudget300": 300, "perPerson300For3People": 900 },
+  "anonymousGenerationRequiresSignIn": true,
+  "browserWarningsAndErrors": 0,
+  "scope": "Guest form and layout. Authenticated flows are tested separately."
+}

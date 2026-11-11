@@ -3,11 +3,12 @@ import { Landscape } from './components/Landscape'
 import { Navigation } from './components/Navigation'
 import { destinations } from './data/destinations'
 import { AccountSection } from './components/AccountSection'
+import { PlannerSection } from './components/PlannerSection'
 
 const steps = [
   { icon: SlidersHorizontal, title: 'შენი სურვილებით', text: 'ადგილი, თარიღები, ინტერესები და ბიუჯეტი — კარგი გეგმა შენი არჩევანით იწყება.' },
-  { icon: Route, title: 'გააზრებული გეგმით', text: 'ამინდი, სავარაუდო ხარჯები და ალტერნატივები ერთ სივრცეში მოიყრის თავს.' },
-  { icon: Users, title: 'საყვარელ ადამიანებთან', text: 'შერჩეული გეგმის დადასტურების შემდეგ თანამგზავრების მოწვევასაც შეძლებ.' },
+  { icon: Route, title: 'გააზრებული გეგმით', text: 'მიიღე Groq AI-ის ქართული დღის გეგმა და ხელმისაწვდომი ამინდის პროგნოზი.' },
+  { icon: Users, title: 'საყვარელ ადამიანებთან', text: 'მიუთითე ჯგუფის ზომა, დაგეგმე საერთო ბიუჯეტი და ჩამოტვირთე გეგმა გასაზიარებლად.' },
 ]
 
 export default function App() {
@@ -22,8 +23,8 @@ export default function App() {
             <h1 id="hero-title">დაგეგმე დასვენება,<br /><span className="text-forest">რომელიც შენ<br className="hidden xl:block" /> გგავს<span className="text-clay">.</span></span></h1>
             <p className="hero-description">მთაში სიმშვიდე თუ ზღვის თავგადასავალი?<br className="hidden sm:block" /> აღმოაჩინე შენი ადგილი საქართველოში და აქციე<br className="hidden xl:block" /> „ერთხელ წავიდეთ“ ნამდვილ გეგმად.</p>
             <div className="flex flex-wrap items-center gap-x-7 gap-y-4">
-              <a href="#destinations" className="button">იპოვე შენი მიმართულება <ArrowUpRight size={20} /></a>
-              <a href="#how-it-works" className="text-link">როგორ იმუშავებს <ArrowDown size={16} /></a>
+              <a href="#planner" className="button">დაგეგმე შენი დასვენება <ArrowUpRight size={20} /></a>
+              <a href="#how-it-works" className="text-link">როგორ მუშაობს <ArrowDown size={16} /></a>
             </div>
             <div className="hero-footnote"><span className="tiny-compass"><Compass size={20} strokeWidth={1.5} /></span><span>შენი ტემპით. შენი ბიუჯეტით. შენს ადამიანებთან.</span></div>
           </div>
@@ -35,6 +36,7 @@ export default function App() {
           </div>
         </section>
 
+        <PlannerSection />
         <section id="destinations" className="destinations-section" aria-labelledby="destinations-title">
           <div className="page-width">
             <div className="section-heading"><div><p className="eyebrow">ახლოს არის რაღაც განსაკუთრებული</p><h2 id="destinations-title">რომელი განწყობაა შენი?</h2></div><span className="section-aside">სამი იდეა შენი შემდეგი დასვენებისთვის <ArrowDown size={17} /></span></div>
@@ -53,12 +55,12 @@ export default function App() {
         </section>
 
         <section id="how-it-works" className="page-width how-section" aria-labelledby="how-title">
-          <div className="section-heading"><div><p className="eyebrow">კარგ დასვენებას კარგი დასაწყისი სჭირდება</p><h2 id="how-title">შენი იდეიდან — საერთო მოგონებამდე</h2></div><span className="planned-badge">დაგეგმილი შესაძლებლობები</span></div>
+          <div className="section-heading"><div><p className="eyebrow">კარგ დასვენებას კარგი დასაწყისი სჭირდება</p><h2 id="how-title">შენი იდეიდან — საერთო მოგონებამდე</h2></div><span className="planned-badge">შექმენი · შეინახე · იმოგზაურე</span></div>
           <div className="grid gap-8 md:grid-cols-3">{steps.map(({ icon: Icon, title, text }, index) => <article key={title} className="step"><div className="flex items-center justify-between"><span className="step-icon"><Icon size={23} strokeWidth={1.5} /></span><span className="step-number">0{index + 1}</span></div><h3>{title}</h3><p>{text}</p></article>)}</div>
         </section>
 
         <AccountSection />
-        <section id="about" className="page-width about-section" aria-labelledby="about-title"><div className="about-panel"><div><p className="eyebrow">Holliday Planner-ის შესახებ</p><h2 id="about-title">ნაკლები დრო დაგეგმვაში.<br />მეტი დრო მოგზაურობაში.</h2></div><div className="about-copy"><p>ვქმნით დასვენების პერსონალური და ჯგუფური დაგეგმვის ქართულ სივრცეს — შენი ინტერესებით დაწყებული, მეგობრების მოწვევით გაგრძელებული.</p><p className="stage-note">ეს საწყისი ვერსიაა: შეგიძლია მიმართულებების გაცნობა და ანგარიშების განყოფილების ნახვა. გეგმის შექმნა და ამინდის ინტეგრაცია შემდეგ ეტაპებზე დაემატება.</p><a className="text-link" href="#account">შენი პირადი სივრცე <ArrowUpRight size={17} /></a></div></div></section>
+        <section id="about" className="page-width about-section" aria-labelledby="about-title"><div className="about-panel"><div><p className="eyebrow">Holliday Planner-ის შესახებ</p><h2 id="about-title">ნაკლები დრო დაგეგმვაში.<br />მეტი დრო მოგზაურობაში.</h2></div><div className="about-copy"><p>დასვენების პერსონალური და ჯგუფური დაგეგმვის ქართული სივრცე — შენი ინტერესები, ბიუჯეტი, Groq AI-ის რჩევები და ამინდის ხელმისაწვდომი პროგნოზი ერთ გეგმაში.</p><p className="stage-note">შექმენი 1–7 დღის გეგმა, შეინახე შენს ანგარიშში და ჩამოტვირთე გასაზიარებლად. მომსახურებების ფასები, ხელმისაწვდომობა და პირობები გამგზავრებამდე გადაამოწმე.</p><a className="text-link" href="#planner">შექმენი შენი გეგმა <ArrowUpRight size={17} /></a></div></div></section>
       </main>
       <footer className="page-width site-footer"><a href="#home" className="footer-brand"><Compass size={19} />Holliday Planner<span className="text-clay">.</span></a><p>შექმნილია მომავალი მოგონებებისთვის.</p><a href="#home" className="text-link">დასაწყისში დაბრუნება <ArrowUpRight size={15} /></a></footer>
     </>
