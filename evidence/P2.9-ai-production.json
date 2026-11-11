@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-11-11T11:20:56.601Z",
+  "publicUrl": "https://holliday-planner.dynamicabode1.chatgpt.site",
+  "sourceCommit": "cb22562667177ee8546e26ac314364753b1e180d",
+  "config": {
+    "aiConfigured": true,
+    "storageConfigured": true
+  },
+  "anonymousTripsStatus": 401,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-DvgoIwso.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/account-service-D_8df79H.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-BKrNz4x1.css",
+      "status": 200
+    }
+  ],
+  "scope": "Anonymous public HTTP and configuration. Live Groq response and owner authorization are verified separately."
+}

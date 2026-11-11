@@ -17,13 +17,13 @@ dist/client/assets/index-BKrNz4x1.css                                        40.
 dist/client/assets/account-service-D_8df79H.js                              216.00 kB │ gzip: 55.68 kB
 dist/client/assets/index-DvgoIwso.js                                        290.47 kB │ gzip: 88.26 kB
 
-✓ built in 732ms
+✓ built in 857ms
 vite v8.3.7 building ssr environment for production...
 transforming...
 ✓ 7 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/server/index.js  910.04 kB │ gzip: 359.55 kB
+dist/server/index.js  911.06 kB │ gzip: 359.90 kB
 
-✓ built in 39ms
+✓ built in 43ms
 Worker built with embedded client assets; no API secrets are embedded.

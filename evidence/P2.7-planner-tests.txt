@@ -2,44 +2,43 @@
 > holliday-planner@0.1.0 test
 > node --test tests/*.test.mjs
 
-✔ new passwords must match and be long enough, while existing short passwords can sign in (557.1566ms)
-✔ invalid registration focuses the first error and never calls the provider (128.6277ms)
-✔ registration submits trimmed details and interests and shows email confirmation (59.7321ms)
-✔ unconfigured accounts report unavailable service without claiming a created account (52.8811ms)
-✔ login reports invalid credentials and then accepts an existing short password (64.1192ms)
-✔ an existing session restores only recognized interests (31.4787ms)
-✔ signed-in interests save on form submission and logout clears the profile (52.3844ms)
-✔ recovery email and recovery session use the password reset flow (51.4318ms)
-✔ provider failures stay on the form and repeated submission cannot duplicate a pending signup (42.5971ms)
-3:14:15 PM [vite] (client) [optimizer] bundling dependencies...
-✔ mobile navigation updates its accessible state and closes after following a link (623.4072ms)
-✔ Escape closes the dropdown first, then mobile navigation, restoring trigger focus (63.8737ms)
-✔ outside pointer interaction closes both disclosures (25.1187ms)
-✔ moving focus out of the navigation closes it (18.8367ms)
-✔ changing between mobile and desktop resets open disclosure state (17.0384ms)
-✔ homepage has three destinations and every section link has a real target (107.6102ms)
-3:14:14 PM [vite] (client) [optimizer] bundling dependencies...
-3:14:12 PM [vite] (client) Re-optimizing dependencies because vite config has changed
-✔ trip validation rejects ambiguous dates, inverted ranges, overlong trips and invalid money or people (285.4531ms)
-✔ budget allocation distinguishes whole-group and per-person totals and excludes accommodation on day trips (2.3735ms)
-✔ anonymous and invalid sessions cannot create or read plans (7.6744ms)
-✔ cross-origin writes and oversized JSON are rejected (3.1461ms)
-✔ saved trips survive a second API call and are invisible to other owners for every operation (8.2892ms)
-✔ real generation path validates and saves the result, uses a server key and sends no account contacts (5.8448ms)
-✔ replayed request IDs are idempotent and repeated new requests are limited by persistent database state (5.3458ms)
-✔ provider rate limits preserve the draft and never create a fake recommendation (4.8193ms)
-✔ malformed AI output is rejected rather than saved as a result (2.9734ms)
-✔ editing inputs clears the old recommendation and stale revisions cannot overwrite a plan (4.0372ms)
-✔ an in-flight result cannot overwrite an edited trip (3.5266ms)
-✔ future dates never get invented forecasts and partial forecast coverage is explicit (2.8685ms)
-✔ status changes require an explicit owner action, and deletion removes only the selected owned record (3.217ms)
-✔ invalid planner fields focus the first error and make no write requests (727.7962ms)
-✔ saving a draft makes it available in My Plans without generating AI (95.2692ms)
-✔ generation saves first, renders the result and hides it as soon as inputs change (104.8654ms)
-✔ provider failure keeps the saved draft and user input available for retry (77.2037ms)
-✔ logging out removes private results and saved plans from the page (96.7865ms)
-✔ a late generation response after sign-out cannot restore the old user plan (127.8581ms)
-3:14:15 PM [vite] (client) [optimizer] bundling dependencies...
+✔ new passwords must match and be long enough, while existing short passwords can sign in (583.0161ms)
+✔ invalid registration focuses the first error and never calls the provider (199.6987ms)
+✔ registration submits trimmed details and interests and shows email confirmation (81.7318ms)
+✔ unconfigured accounts report unavailable service without claiming a created account (89.6499ms)
+✔ login reports invalid credentials and then accepts an existing short password (80.1047ms)
+✔ an existing session restores only recognized interests (49.068ms)
+✔ signed-in interests save on form submission and logout clears the profile (111.4143ms)
+✔ recovery email and recovery session use the password reset flow (113.5393ms)
+✔ provider failures stay on the form and repeated submission cannot duplicate a pending signup (83.6633ms)
+3:35:39 PM [vite] (client) [optimizer] bundling dependencies...
+✔ mobile navigation updates its accessible state and closes after following a link (623.7643ms)
+✔ Escape closes the dropdown first, then mobile navigation, restoring trigger focus (86.362ms)
+✔ outside pointer interaction closes both disclosures (21.7222ms)
+✔ moving focus out of the navigation closes it (43.2673ms)
+✔ changing between mobile and desktop resets open disclosure state (25.2865ms)
+✔ homepage has three destinations and every section link has a real target (147.9461ms)
+3:35:38 PM [vite] (client) [optimizer] bundling dependencies...
+✔ trip validation rejects ambiguous dates, inverted ranges, overlong trips and invalid money or people (273.614ms)
+✔ budget allocation distinguishes whole-group and per-person totals and excludes accommodation on day trips (1.6492ms)
+✔ anonymous and invalid sessions cannot create or read plans (5.3244ms)
+✔ cross-origin writes and oversized JSON are rejected (3.5813ms)
+✔ saved trips survive a second API call and are invisible to other owners for every operation (12.6396ms)
+✔ real generation path validates and saves the result, uses a server key and sends no account contacts (5.7917ms)
+✔ replayed request IDs are idempotent and repeated new requests are limited by persistent database state (4.026ms)
+✔ provider rate limits preserve the draft and never create a fake recommendation (3.3106ms)
+✔ malformed AI output is rejected rather than saved as a result (2.5507ms)
+✔ editing inputs clears the old recommendation and stale revisions cannot overwrite a plan (4.3025ms)
+✔ an in-flight result cannot overwrite an edited trip (3.261ms)
+✔ future dates never get invented forecasts and partial forecast coverage is explicit (1.532ms)
+✔ status changes require an explicit owner action, and deletion removes only the selected owned record (2.6432ms)
+✔ invalid planner fields focus the first error and make no write requests (755.7588ms)
+✔ saving a draft makes it available in My Plans without generating AI (126.4027ms)
+✔ generation saves first, renders the result and hides it as soon as inputs change (144.4753ms)
+✔ provider failure keeps the saved draft and user input available for retry (144.1102ms)
+✔ logging out removes private results and saved plans from the page (193.476ms)
+3:35:38 PM [vite] (client) [optimizer] bundling dependencies...
+✔ a late generation response after sign-out cannot restore the old user plan (218.2255ms)
 ℹ tests 34
 ℹ suites 0
 ℹ pass 34
@@ -47,4 +46,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 3627.5729
+ℹ duration_ms 4269.0478
