@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-11T11:44:45.375Z",
+  "site": "https://holliday-planner.dynamicabode1.chatgpt.site",
+  "deployedSourceAtDatabaseRead": "72dc731d10afcb8702c9d0af882ef35362704d9e",
+  "testType": "Synthetic trip created in the real signed-in browser session",
+  "liveBrowserObserved": {
+    "signedIn": true,
+    "aiSuccessMessage": true,
+    "savedPlanCount": 2
+  },
+  "databaseVerified": {
+    "table": "trips",
+    "syntheticPlanFound": true,
+    "hasSavedAIResult": true,
+    "status": "draft",
+    "revision": 1,
+    "resultReadNote": "The database reader truncates long cells for model output. The stored result_json contains a recommendation with two day entries; the browser displayed the complete result."
+  },
+  "limitations": [
+    "Browser automation stopped before reload verification and final AI-result screenshot.",
+    "Production weather was unavailable during the observed generation; AI displayed this explicitly."
+  ]
+}

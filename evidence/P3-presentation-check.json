@@ -1,0 +1,28 @@
+{
+  "checkedOn": "2026-11-11",
+  "presentation": "deliverables/holliday-planner.ka.pptx",
+  "slideCount": 8,
+  "canvas": { "width": 1280, "height": 720 },
+  "font": "Sylfaen",
+  "fontFileExistsOnWindows": true,
+  "editableText": true,
+  "realScreenshotCount": 2,
+  "allEightSlidesRenderedAndIndividuallyReviewed": true,
+  "changedSlidesRenderedAndReviewedAgain": [1, 2, 4, 5, 7],
+  "packageIntegrity": "pass",
+  "packageFindingCount": 0,
+  "layoutFindingCount": 0,
+  "fontPolicy": "pass",
+  "firstPartyPptxImport": "pass",
+  "sha256": "b4a4d485ce71c8b7cff90fc8e8a686a36e49cd3b0b8c094ea0529afe90a9498c",
+  "bytes": 173088,
+  "openedInNativePowerPoint": false,
+  "sources": [
+    "docs/06-project-report.ka.md",
+    "evidence/P2.7-planner-tests.txt",
+    "evidence/P2.9-ai-build.txt",
+    "evidence/P2.9-groq-live.json",
+    "evidence/P2.9-ai-signed-in.json",
+    "evidence/P2.8-planner-layouts.json"
+  ]
+}
